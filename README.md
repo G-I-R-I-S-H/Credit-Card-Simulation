@@ -96,8 +96,9 @@ A console-based **C++ application** that simulates the core functionalities of a
 ## ✅ Sample Use Case
 
 ```cpp
-CardHolder user("Tarun", "Karnataka", "tarunsbwork9923@gmail.com", "9876543210", 850);
+CardHolder user("Girish", "Karnataka", "girishhulli7@gmail.com", "7795040621", 849);
 user.applyCreditCard(); // Issues Platinum Card
 user.pay("Amazon", 3000.0, &user); // Makes a secure transaction
 user.duePayment(3000.0); // Pays due amount
 user.displayCards(); // View all cards and details
+```
