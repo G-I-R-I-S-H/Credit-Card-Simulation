@@ -58,11 +58,15 @@ class Transaction {
         string To;
         double amt;
         
+<<<<<<< HEAD
         Transaction(string receiver, double amount)
          {
             To = receiver;
             amt = amount;
          }
+=======
+        Transaction(string receiver, double amount): To(receiver), amt(amount) {}
+>>>>>>> 87e0f35b633df4617838f48e43f33a707f1cde28
 };
 
 class CreditCard {
@@ -73,7 +77,11 @@ class CreditCard {
         int PIN;
         string cardNo;
         string cName;
+<<<<<<< HEAD
         double multipler; 
+=======
+        double multipler;
+>>>>>>> 87e0f35b633df4617838f48e43f33a707f1cde28
         double spendLimit;
         double outstandingBalance;
         string expiryDate;
@@ -90,7 +98,11 @@ class CreditCard {
             cardNo.append(to_string(randomNum()));
 
         // CVV GENERATION
+<<<<<<< HEAD
         string temp ;
+=======
+        string temp = "";
+>>>>>>> 87e0f35b633df4617838f48e43f33a707f1cde28
         for (int x=0; x<3; x++)
             temp.append(to_string(randomNum()));
         cvv = stoi(temp);
@@ -109,7 +121,11 @@ class CreditCard {
 
     void generatePIN() {
         cout << "Generating PIN" << endl;
+<<<<<<< HEAD
        // int tempPIN;
+=======
+        int tempPIN;
+>>>>>>> 87e0f35b633df4617838f48e43f33a707f1cde28
         this->PIN = 0;
         try {
             cout << "Enter New PIN: " << endl;
@@ -425,6 +441,7 @@ int main() {
     cout << "\\$$$$$$  |$$ |  $$ |$$$$$$$$\\ $$$$$$$  |$$$$$$\\    $$ |         \\$$$$$$  |$$ |  $$ |$$ |  $$ |$$$$$$$  |" << endl;
     cout << " \\______/ \\__|  \\__|\\________|\\_______/ \\______|   \\__|          \\______/ \\__|  \\__|\\__|  \\__|\\_______/ " << endl;
     cout << endl << endl;
+<<<<<<< HEAD
     cout << "Object Oriented Programming (2025) Course Project by:" << endl;
     
     cout<<"                                      _         "<<endl;
@@ -434,6 +451,16 @@ cout << "| |      _    _ .--.   _  |  |_ _ _  | | .- -.      " << endl;
 cout << "| |  __ | |  | `/'`\\] | | \\_ _ _   \\ |  `_   _ '\\" << endl;
 cout << "| |_| | | |  | |_     | |  _ _ _/  / |  /  `' \\  | " << endl;
 cout << " \\____| |_| |___|     |_| |_ _ _ _/  |_|       |_|" << endl;
+=======
+    cout << "Object Oriented Programming (2024) Course Project by:" << endl;
+    cout << "  _________                                    ______    ______   " << endl;
+    cout << " |  _   _  |                                 .' ____ \\  |_   _ \\   " << endl;
+    cout << " |_/ | | \\_|,--.   _ .--.  __   _   _ .--.   | (___ \\_|   | |_) | " << endl;
+    cout << "     | |   `'_\\ : [ `/'`\\][  | | | [ `.-. |   _.____`.    |  __'.  " << endl;
+    cout << "    _| |_  // | |, | |     | \\_/ |, | | | |  | \\____) |  _| |__) | " << endl;
+    cout << "   |_____| \\'-;__/[___]    '.__.'_/[___||__]  \\______.' |_______/"  << "\taka TARGET" << endl;
+ 
+>>>>>>> 87e0f35b633df4617838f48e43f33a707f1cde28
 
 
 
@@ -587,4 +614,8 @@ void giveChoices() {
     cout << "9. View Statement\n";
     cout << "10. Back\n";
     cout << "0. View Menu\n";
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 87e0f35b633df4617838f48e43f33a707f1cde28
